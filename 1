@@ -1,0 +1,18 @@
+create table tab1 (C1 varchar2(1), C2 varchar2(1), C3 varchar(1));
+
+insert into tab1 values ('1', null, 'a');
+insert into tab1 values ('2','1','b');
+insert into tab1 values ('3','2','c');
+insert into tab1 values ('4','3','d');
+
+select * from tab1;
+commit;
+
+--주석처리 
+select * from tab1;
+start WITH C2 is null 
+conn prior c1 = c2;
+order siblings by c3;
+
+
+drop table tab1;
